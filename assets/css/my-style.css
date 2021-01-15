@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,600");
+
+body {
+  color: #fff;
+  font-family: "Montserrat";
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2.8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bc89d1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9044ad;
+}
+
+.menu_section {
+  visibility: hidden;
+  margin-top: 2.5rem;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #56206d;
+  list-style-type: none;
+}
+
+.menu_content {
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+}
+
+.menu_header {
+  display: block;
+}
+
+.about {
+  position: relative;
+  background-color: #56206d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mode_section {
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2.5rem minmax(auto, 30%) auto;
+  background-color: #8e44ad;
+}
+
+.menu_container {
+  width: 100%;
+  background: #8e44ad;
+  display: grid;
+  grid-template-columns: 2.5rem auto 2.5rem;
+}
+
+.mode_name {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 11px;
+}
+
+.top_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #8e44ad;
+}
+
+.display_section {
+  display: grid;
+  grid-template-rows: minmax(auto, 10%) auto minmax(auto, 28%);
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: relative;
+}
+.mini_display_row {
+  position: relative;
+  color: #b985cf;
+  width: 100%;
+  background: none;
+  text-align: right;
+  font-size: 0.7rem;
+  display: grid;
+  grid-template-columns: auto 0.5rem;
+}
+
+.display_row {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  background: none;
+  text-align: right;
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: auto 0.5rem;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-touch-callout: text;
+}
+
+.displaymode_row {
+  position: relative;
+  width: 100%;
+  background: none;
+  display: grid;
+  column-gap: 3px;
+  grid-template-columns: 10% 10% auto;
+}
+
+.memory_row {
+  position: relative;
+  width: 100%;
+  background: none;
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+
+.numeralsystem_row {
+  visibility: hidden;
+}
+
+.progarammer_row {
+  visibility: hidden;
+}
+
+.bottom_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #8e44ad;
+}
+
+.calc_section {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: relative;
+}
+
+.button_row {
+  display: grid;
+  width: 100%;
+  background: none;
+  position: relative;
+}
+
+.method_row {
+  display: grid;
+  width: 100%;
+  background: #783794;
+  position: relative;
+}
+/*Button*/
+
+.fixed_button {
+  background: none;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-style: bold;
+  text-align: center;
+  line-height: 2.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: default;
+  outline: none;
+}
+
+.fixed_button:hover {
+  background: #bc89d1;
+}
+
+.button_top {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 0.8rem;
+  font-style: bold;
+  text-align: center;
+  line-height: 1.8rem;
+  cursor: default;
+  outline: none;
+}
+
+.button_top:hover {
+  background: #bc89d1;
+}
+
+.func_btn {
+  width: 100%;
+  height: 100%;
+  background: #532765;
+  border: 0.01rem solid #8e44ad;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-style: bold;
+  text-align: center;
+  line-height: 2.4rem;
+  cursor: default;
+  outline: none;
+}
+
+.func_btn:hover {
+  background: #bc89d1;
+}
+
+.number_btn {
+  width: 100%;
+  height: 100%;
+  background: #371b43;
+  border: 0.01rem solid #8e44ad;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-style: bold;
+  text-align: center;
+  line-height: 2.4rem;
+  cursor: default;
+  outline: none;
+}
+
+.number_btn:hover {
+  background: #bc89d1;
+}
+
+.equal_btn {
+  width: 100%;
+  height: 100%;
+  background: #008dc9;
+  border: 0.01rem solid #8e44ad;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-style: bold;
+  text-align: center;
+  line-height: 2.4rem;
+  cursor: default;
+  outline: none;
+}
+
+.equal_btn:hover {
+  background: #00a2e8;
+}
+
+/*Radio Button*/
+.radiobtn_type1 {
+  display: grid;
+  grid-template-columns: 50px auto;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: default;
+  user-select: none;
+}
+.radiobtn_type1 input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: none;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobtn_type1:hover {
+  background-color: #bc89d1;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobtn_type1 input:checked ~ .checkmark1 {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobtn_type1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/*Toggle Button*/
+.togglebutton_top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  height: 100%;
+  cursor: default;
+  user-select: none;
+  background: none;
+  outline: none;
+}
+
+.togglebutton_top input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: none;
+}
+
+/* On mouse-over, add a grey background color */
+.togglebutton_top:hover {
+  background-color: #bc89d1;
+}
+
+/* When the checkbox is checked, add a blue background */
+.togglebutton_top input:checked ~ .checkmark3 {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.togglebutton_top input:checked ~ .checkmark3:after {
+  display: block;
+}

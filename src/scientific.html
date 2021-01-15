@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../assets/css/my-style.css">
+</head>
+
+<body>
+    <div class="menu_section" style="visibility: hidden" id="menu_section">
+        <div class="menu_content">
+            <div class="Calculator_group">
+                <li class="all_li"><label class="menu_header">Calculator</label></li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="standard">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Standard</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="scientific">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Scientific</div>
+                        <input type="radio" checked="checked" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="programmer">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Programmer</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="date_calc">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Date Calculation</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+            </div>
+            <div class="Calculator_group">
+                <li class="all_li"><label class="menu_header">Converter</label></li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="currency">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Currency</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="temperature">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Temperature</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="time">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Time</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test1">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test2">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test3">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test4">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test5">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+                <li class="all_li">
+                    <label class="radiobtn_type1" id="test6">
+                        <div><img src="../assets/images/x-1.svg"></div>
+                        <div>Test</div>
+                        <input type="radio" name="menu_item">
+                        <span class="checkmark1"></span>
+                    </label>
+                </li>
+            </div>
+        </div>
+        <div class="about">
+            <li class="all_li"><label class="menu_items" id="about">About</label></li>
+        </div>
+
+    </div>
+    <div class="mode_section" id="mode_section">
+        <div class="menu_container">
+            <div><button class="fixed_button" id="menu_btn">≡</button></div>
+            <div>
+                <p class="mode_name" id="mode">Scientific</p>
+            </div>
+            <div>
+                <button class="fixed_button" id="history_btn">≡</button>
+            </div>
+        </div>
+        <div class="top_container">
+            <div class="display_section">
+                <div class="mini_display_row">
+                    9 x
+                </div>
+                <div class="display_row">
+                    9
+                </div>
+                <div class="displaymode_row" id="displaymoderow">
+                    <div>
+                        <button class="button_top" id="angle_btn">DEG</button>
+                    </div>
+                    <div>
+                        <label class="togglebutton_top">F-E
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark3"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="memory_row" id="memoryrow">
+                    <div>
+                        <button class="button_top" id="mc_btn">MC</button>
+                    </div>
+                    <div>
+                        <button class="button_top" id="mr_btn">MR</button>
+                    </div>
+                    <div>
+                        <button class="button_top" id="mplus_btn">M+</button>
+                    </div>
+                    <div>
+                        <button class="button_top" id="mminus_btn">M-</button>
+                    </div>
+                    <div>
+                        <button class="button_top" id="ms_btn">MS</button>
+                    </div>
+                    <div>
+                        <button class="button_top" id="marrow_btn">M▼</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_container">
+            <div class="calc_section" style="grid-template-rows: 41px auto;" id="calcsection">
+                <div class="method_row" style="grid-template-columns: 170px 170px auto;">
+                    <div>
+                        <button class="func_btn" id="trigonometry_btn"><img src="../assets/images/x-1.svg">
+                            Trigonometry</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="funct_btn"><img src="../assets/images/x-1.svg"> Function</button>
+                    </div>
+                </div>
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="shift_btn">ᐃ Shift</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="pi_btn">π</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="e_btn">e</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="clear_btn">C</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="backspace_btn">⌫</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="x2or3_btn"><img src="../assets/images/x2.svg"></button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="xminus1_btn"><img src="../assets/images/x-1.svg"></button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="abs_btn"><img src="../assets/images/abs.svg"></button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="exp_btn">exp</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="mode_btn">mod</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="sqorcbrt_btn"><img src="../assets/images/sqrt.svg"></button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="open_roundbracket_btn">(</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="close_roundbracket_btn">)</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="factorial_btn">n!</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="divide_btn">÷</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="poworrt_btn"><img src="../assets/images/xpowy.svg"></button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="seven_btn">7</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="eight_btn">8</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="nine_btn">9</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="multiply_btn">×</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="twoortenpowx_btn"><img src="../assets/images/tenpowx.svg"></button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="four_btn">4</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="five_btn">5</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="six_btn">6</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="minus_btn">-­­­­­­</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="log_btn">log­­­­­­</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="one_btn">1</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="two_btn">2</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="three_btn">3</button>
+                    </div>
+                    <div>
+                        <button class="func_btn" id="plus_btn">+­­­­­­</button>
+                    </div>
+                </div>
+
+                <div class="button_row" style="grid-template-columns: 20% 20% 20% 20% 20%;">
+                    <div>
+                        <button class="func_btn" id="lnorepowx_btn">ln</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="invert_btn">±</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="zero_btn">0</button>
+                    </div>
+                    <div>
+                        <button class="number_btn" id="dot_btn">.</button>
+                    </div>
+                    <div>
+                        <button class="equal_btn" id="equal_btn">=­­­­­­</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scientific.js">
+    </script>
+</body>
+
+</html>
